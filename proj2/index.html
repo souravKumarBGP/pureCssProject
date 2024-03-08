@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>project2</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body{
+                background: #101010;
+                display: grid;
+                height: 90vh;
+                place-items: center;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                border: 20px solid blueviolet;
+                border-top-width: 0px;
+                border-left-width: 0px;
+                position: relative;
+                border-radius: 100%;
+                animation: ani 2s linear infinite;
+            }  
+            .box::after{
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                left: -10px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background: blueviolet;
+                box-shadow: 0px 0px 20px rgb(181, 107, 251);
+            } 
+            @keyframes ani{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+
+        </div>
+    </body>
+</html>

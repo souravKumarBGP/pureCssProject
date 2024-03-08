@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>project3</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body{
+                background: #202020;
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                place-items: center;
+            }
+            button{
+             
+                width: 200px;
+                height: 60px;
+                font-size: 30px;
+                font-weight: bold;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                outline: none;
+                border: 2px solid #fff;
+                color: #fff;
+            }
+            button:hover{
+                border-color:red;
+                color:red;
+                animation: ani 0.2s infinite alternate;
+            }
+            @keyframes ani{
+                0%{
+                    transform: rotate(0deg);
+                }
+                50%{
+                    transform: rotate(35deg);
+                }
+                100%{
+                    transform: rotate(0deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button>Share Me</button>
+    </body>
+</html>
